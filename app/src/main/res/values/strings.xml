@@ -1,0 +1,24 @@
+<resources>
+    <string name="app_name">Feed The Homeless</string>
+    <string name="title_activity_maps">Map</string>
+    <string name="title_activity_shelter_home">ShelterHomeActivity</string>
+    <string name="title_home">Home</string>
+    <string name="title_dashboard">Dashboard</string>
+    <string name="title_notifications">Notifications</string>
+    <string name="title_activity_restaurant_map">Map</string>
+    <string name="title_activity_shelter_tabbed">ShelterTabbedActivity</string>
+    <string name="tab_text_1">Tab 1</string>
+    <string name="tab_text_2">Tab 2</string>
+    <string name="title_activity_shelter">ShelterActivity</string>
+    <string name="title_activity_council">CouncilActivity</string>
+    <string name="title_activity_restaurant">RestaurantActivity</string>
+    <string name="title_activity_login2">Sign in</string>
+    <string name="prompt_email">Email</string>
+    <string name="prompt_password">Password</string>
+    <string name="action_sign_in">Sign in or register</string>
+    <string name="action_sign_in_short">Sign in</string>
+    <string name="welcome">"Welcome !"</string>
+    <string name="invalid_username">Not a valid username</string>
+    <string name="invalid_password">Password must be >5 characters</string>
+    <string name="login_failed">"Login failed"</string>
+</resources>

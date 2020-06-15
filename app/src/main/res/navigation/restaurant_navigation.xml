@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/restaurant_navigation"
+    app:startDestination="@+id/rest_nav_home">
+
+    <fragment
+        android:id="@+id/rest_nav_home"
+        android:name="com.example.feedthehomeless.RestaurantUI.home.HomeFragment"
+        android:label="Home"
+        tools:layout="@layout/restaurant_home" >
+        <action
+            android:id="@+id/action_restaurant_home_to_restaurant_account"
+            app:destination="@id/rest_nav_account" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/rest_nav_account"
+        android:name="com.example.feedthehomeless.RestaurantUI.account.AccountFragment"
+        android:label="Account"
+        tools:layout="@layout/restaurant_account" >
+        <action
+            android:id="@+id/action_restaurant_account_to_restaurant_settings"
+            app:destination="@id/rest_nav_settings" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/rest_nav_settings"
+        android:name="com.example.feedthehomeless.RestaurantUI.settings.SettingsFragment"
+        android:label="Settings"
+        tools:layout="@layout/restaurant_settings" />
+</navigation>

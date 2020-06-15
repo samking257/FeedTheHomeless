@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/council_navigation"
+    app:startDestination="@+id/council_home">
+
+    <fragment
+        android:id="@+id/council_home"
+        android:name="com.example.feedthehomeless.CouncilUI.home.HomeFragment"
+        android:label="@string/title_home"
+        tools:layout="@layout/council_home" >
+        <action
+            android:id="@+id/action_council_home_to_council_data"
+            app:destination="@id/council_data" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/council_data"
+        android:name="com.example.feedthehomeless.CouncilUI.data.DataFragment"
+        android:label="@string/title_dashboard"
+        tools:layout="@layout/council_data" >
+        <action
+            android:id="@+id/action_council_data_to_council_settings"
+            app:destination="@id/council_settings" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/council_settings"
+        android:name="com.example.feedthehomeless.CouncilUI.settings.SettingsFragment"
+        android:label="@string/title_notifications"
+        tools:layout="@layout/council_settings" />
+</navigation>

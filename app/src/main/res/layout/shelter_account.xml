@@ -1,0 +1,149 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:background="@color/colorPrimary"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/btnEdit"
+        style="@style/IconButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/small_space"
+        android:layout_marginRight="@dimen/small_space"
+        android:clickable="true"
+        android:tint="@color/colorPrimaryDark"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/ic_edit_black_24dp" />
+
+    <ImageView
+        android:id="@+id/imgShelterAccount"
+        android:layout_width="@dimen/title_to_center"
+        android:layout_height="@dimen/title_to_center"
+        android:layout_marginTop="@dimen/medium_space"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/ic_supervisor_account_black" />
+
+    <TextView
+        android:id="@+id/lblShelterName"
+        style="@style/Text_H3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/activity_margin"
+        android:layout_marginLeft="@dimen/activity_margin"
+        android:text="Name: "
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imgShelterAccount" />
+
+    <EditText
+        android:id="@+id/txtShelterName"
+        android:layout_width="0sp"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/activity_margin"
+        android:layout_marginTop="@dimen/activity_margin"
+        android:layout_marginRight="@dimen/activity_margin"
+        android:inputType="none|textPersonName"
+        android:text="Company Name"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/lblShelterName"
+        app:layout_constraintTop_toBottomOf="@+id/imgShelterAccount" />
+
+    <TextView
+        android:id="@+id/lblShelterDonations"
+        style="@style/Text_H3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/activity_margin"
+        android:layout_marginTop="@dimen/activity_margin"
+        android:text="Donations Recieved: "
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txtShelterName" />
+
+    <EditText
+        android:id="@+id/txtShelterDonations"
+        android:layout_width="0sp"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/activity_margin"
+        android:layout_marginTop="@dimen/activity_margin"
+        android:layout_marginRight="@dimen/activity_margin"
+        android:inputType="none|number"
+        android:text="0"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/lblShelterDonations"
+        app:layout_constraintTop_toBottomOf="@+id/txtShelterName" />
+
+    <TextView
+        android:id="@+id/lblShelterAddress"
+        style="@style/Text_H3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/activity_margin"
+        android:layout_marginLeft="@dimen/activity_margin"
+        android:text="Address: "
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txtShelterDonations" />
+
+    <EditText
+        android:id="@+id/txtShelterAddress"
+        android:layout_width="0sp"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/activity_margin"
+        android:layout_marginTop="@dimen/activity_margin"
+        android:layout_marginRight="@dimen/activity_margin"
+        android:inputType="none|textMultiLine|textPostalAddress"
+        android:text="Address"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/lblShelterAddress"
+        app:layout_constraintTop_toBottomOf="@+id/txtShelterDonations" />
+
+    <TextView
+        android:id="@+id/lblDeliveryStatus"
+        style="@style/Text_H3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/activity_margin"
+        android:layout_marginLeft="@dimen/activity_margin"
+        android:text="Delivery Status: "
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txtShelterAddress" />
+
+    <CheckBox
+        android:id="@+id/cbShelterCollection"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="2sp"
+        android:layout_marginTop="@dimen/activity_margin"
+        android:clickable="false"
+        android:text="Collection"
+        app:layout_constraintStart_toEndOf="@+id/lblDeliveryStatus"
+        app:layout_constraintTop_toBottomOf="@+id/txtShelterAddress" />
+
+    <CheckBox
+        android:id="@+id/cbShelterDelivery"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/activity_margin"
+        android:layout_marginRight="@dimen/activity_margin"
+        android:clickable="false"
+        android:text="Delivery"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txtShelterAddress" />
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/btnShelterSave"
+        style="@style/ButtonGreen"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/activity_margin"
+        android:text="Save"
+        android:visibility="gone"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/cbShelterCollection" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

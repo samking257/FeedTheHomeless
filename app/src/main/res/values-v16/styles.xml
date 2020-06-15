@@ -1,0 +1,86 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.AppCompat.Light.DarkActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/colorAccent</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDarker</item>
+        <item name="colorAccent">@color/colorPrimaryDark</item>
+    </style>
+
+    <style name="TextAppearance.AppCompat.Widget.ActionBar.Title" parent="android:style/TextAppearance">
+        <item name="android:textColor">@color/colorPrimaryDark</item>
+        <item name="android:textAlignment" tools:targetApi="jelly_bean_mr1">center</item>
+        <item name="android:textSize">26sp</item>
+        <item name="android:fontFamily">@font/arial_bold</item>
+    </style>
+
+    <!--Text Styles-->
+
+    <style name="ButtonText">
+        <item name="android:textColor">@color/colorPrimaryDark</item>
+        <item name="android:textSize">26sp</item>
+        <item name="android:fontFamily">@font/arial_bold</item>
+    </style>
+
+    <style name="Text_H1">
+        <item name="android:textColor">@color/colorPrimaryDark</item>
+        <item name="android:textSize">36sp</item>
+        <item name="android:fontFamily">@font/arial_bold</item>
+    </style>
+
+    <style name="Text_H2">
+        <item name="android:textColor">@color/colorPrimaryDark</item>
+        <item name="android:textSize">26sp</item>
+        <item name="android:fontFamily">@font/arial_bold</item>
+    </style>
+
+    <style name="Text_H3">
+        <item name="android:textColor">@color/colorPrimaryDark</item>
+        <item name="android:textSize">20sp</item>
+        <item name="android:fontFamily">@font/arial_bold</item>
+    </style>
+
+    <style name="Text_H4">
+        <item name="android:textColor">@color/colorPrimaryDark</item>
+        <item name="android:textSize">16sp</item>
+        <item name="android:fontFamily">@font/arial_bold</item>
+    </style>
+
+    <style name="BodyText">
+        <item name="android:textColor">@color/colorPrimaryDark</item>
+        <item name="android:textSize">16sp</item>
+        <item name="android:fontFamily">@font/arial_regular</item>
+    </style>
+
+    <!--Button Styles-->
+
+    <style name="ButtonGreen" parent="Widget.AppCompat.Button.Colored">
+        <item name="android:background">@color/colorAccent</item>
+        <item name="android:backgroundTint" tools:targetApi="lollipop">@color/colorAccent</item>
+        <item name="android:textAlignment" tools:targetApi="jelly_bean_mr1">center</item>
+        <item name="android:textAppearance">@style/ButtonText</item>
+        <item name="android:padding">@dimen/padding_dimen</item>
+    </style>
+
+    <style name="ButtonGrey" parent="Widget.AppCompat.Button.Borderless.Colored">
+        <item name="android:background">@color/colorPrimary</item>
+        <item name="android:textColor">@color/colorPrimaryDarker</item>
+        <item name="android:textSize">@dimen/activity_margin</item>
+        <item name="android:backgroundTint" tools:targetApi="lollipop">@color/colorPrimary</item>
+        <item name="android:textAlignment" tools:targetApi="jelly_bean_mr1">center</item>
+        <item name="android:fontFamily">@font/arial_bold</item>
+        <item name="android:padding">@dimen/padding_dimen</item>
+    </style>
+
+    <style name="RadioButton">
+        <item name="android:buttonTint" tools:targetApi="lollipop">@color/colorAccent</item>
+        <item name="android:textAppearance">@style/BodyText</item>
+    </style>
+
+    <style name="IconButton">
+        <item name="android:backgroundTint" tools:targetApi="lollipop">@color/colorAccent</item>
+        <item name="android:tint">@color/colorPrimaryDarker</item>
+    </style>
+
+</resources>

@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/shelter_navigation"
+    app:startDestination="@+id/rest_nav_home">
+
+    <fragment
+        android:id="@+id/rest_nav_home"
+        android:name="com.example.feedthehomeless.ShelterUI.home.HomeFragment"
+        android:label="@string/title_home"
+        tools:layout="@layout/shelter_home" >
+        <action
+            android:id="@+id/action_shelter_home_to_shelter_account"
+            app:destination="@id/rest_nav_account" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/rest_nav_account"
+        android:name="com.example.feedthehomeless.ShelterUI.account.AccountFragment"
+        android:label="@string/title_dashboard"
+        tools:layout="@layout/shelter_account" >
+        <action
+            android:id="@+id/action_shelter_account_to_shelter_settings"
+            app:destination="@id/rest_nav_settings" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/rest_nav_settings"
+        android:name="com.example.feedthehomeless.ShelterUI.settings.SettingsFragment"
+        android:label="@string/title_notifications"
+        tools:layout="@layout/shelter_settings" />
+</navigation>

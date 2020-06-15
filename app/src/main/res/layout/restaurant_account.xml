@@ -1,0 +1,148 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@color/colorPrimary"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/btnRestaurantEdit"
+        style="@style/IconButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/small_space"
+        android:layout_marginRight="@dimen/small_space"
+        android:clickable="true"
+        android:tint="@color/colorPrimaryDark"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/ic_edit_black_24dp" />
+
+    <ImageView
+        android:id="@+id/imgRestaurantAccount"
+        android:layout_width="@dimen/title_to_center"
+        android:layout_height="@dimen/title_to_center"
+        android:layout_marginTop="@dimen/medium_space"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/ic_supervisor_account_black" />
+
+    <TextView
+        android:id="@+id/lblRestaurantName"
+        style="@style/Text_H3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/activity_margin"
+        android:layout_marginLeft="@dimen/activity_margin"
+        android:text="Name: "
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imgRestaurantAccount" />
+
+    <EditText
+        android:id="@+id/txtRestaurantName"
+        android:layout_width="0sp"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/activity_margin"
+        android:layout_marginTop="@dimen/activity_margin"
+        android:layout_marginRight="@dimen/activity_margin"
+        android:inputType="none|textPersonName"
+        android:text="Company Name"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/lblRestaurantName"
+        app:layout_constraintTop_toBottomOf="@+id/imgRestaurantAccount" />
+
+    <TextView
+        android:id="@+id/lblRestaurantDonations"
+        style="@style/Text_H3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/activity_margin"
+        android:layout_marginTop="@dimen/activity_margin"
+        android:text="Donations Given: "
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txtRestaurantName" />
+
+    <EditText
+        android:id="@+id/txtRestaurantDonations"
+        android:layout_width="0sp"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/activity_margin"
+        android:layout_marginTop="@dimen/activity_margin"
+        android:layout_marginRight="@dimen/activity_margin"
+        android:inputType="none|number"
+        android:text="0"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/lblRestaurantDonations"
+        app:layout_constraintTop_toBottomOf="@+id/txtRestaurantName" />
+
+    <TextView
+        android:id="@+id/lblRestaurantAddress"
+        style="@style/Text_H3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/activity_margin"
+        android:layout_marginLeft="@dimen/activity_margin"
+        android:text="Address: "
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txtRestaurantDonations" />
+
+    <EditText
+        android:id="@+id/txtRestaurantAddress"
+        android:layout_width="0sp"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/activity_margin"
+        android:layout_marginTop="@dimen/activity_margin"
+        android:layout_marginRight="@dimen/activity_margin"
+        android:inputType="none|textMultiLine|textPostalAddress"
+        android:text="Address"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/lblRestaurantAddress"
+        app:layout_constraintTop_toBottomOf="@+id/txtRestaurantDonations" />
+
+    <TextView
+        android:id="@+id/lblRestDeliveryStatus"
+        style="@style/Text_H3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/activity_margin"
+        android:layout_marginLeft="@dimen/activity_margin"
+        android:text="Delivery Status: "
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txtRestaurantAddress" />
+
+    <CheckBox
+        android:id="@+id/cbRestaurantCollection"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="2sp"
+        android:layout_marginTop="@dimen/activity_margin"
+        android:clickable="false"
+        android:text="Collection"
+        app:layout_constraintStart_toEndOf="@+id/lblRestDeliveryStatus"
+        app:layout_constraintTop_toBottomOf="@+id/txtRestaurantAddress" />
+
+    <CheckBox
+        android:id="@+id/cbRestaurantDelivery"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/activity_margin"
+        android:layout_marginRight="@dimen/activity_margin"
+        android:clickable="false"
+        android:text="Delivery"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txtRestaurantAddress" />
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/btnRestaurantSave"
+        style="@style/ButtonGreen"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/activity_margin"
+        android:text="Save"
+        android:visibility="gone"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/cbRestaurantCollection" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_number": "1043320024378",
+    "firebase_url": "https://feedthehomeless-4c1ba.firebaseio.com",
+    "project_id": "feedthehomeless-4c1ba",
+    "storage_bucket": "feedthehomeless-4c1ba.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:1043320024378:android:1ac9845b6c8c6045e8f403",
+        "android_client_info": {
+          "package_name": "com.example.feedthehomeless"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "1043320024378-eiaceb65jl9ue6nlc5b9us1hdpah1b2q.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.feedthehomeless",
+            "certificate_hash": "e4e9f6b904a7b927d6ea5ff09324dc1460ae212a"
+          }
+        },
+        {
+          "client_id": "1043320024378-g2103f0im27pq3qjbctj49t5778fbn9i.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAN6QuF-QMPHer99tJw3xWD96p3-tSjp-E"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "1043320024378-g2103f0im27pq3qjbctj49t5778fbn9i.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
